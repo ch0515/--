@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가위바위보</title>
+    <link rel="stylesheet" href="./js/가위바위보게임.js">
     <style>
         h1{
             font-size: 100px;
@@ -16,19 +17,7 @@
             cursor: pointer;
         }
     </style>
-    <script>
-        window.onload = function(){
-            var button = document.querySelector(".startBtn");
-            var h1 = document.getElementsByTagName("h1")[0];
-
-            var handArr = ["가위", "바위", "보"];
-
-            button.addEventListener("click", function(){
-                var num = Math.round(Math.random() * (handArr.length-1));
-                h1.innerHTML = handArr[num];
-            })
-        }
-    </script>
+    
 </head>
 <body>
     <button type="button" class="startBtn">리셋</button>
