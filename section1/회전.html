@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 회전 화살표</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        h1{
+            font-size: 20px;
+        }
+        button{
+            font-size: 20px;
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+        .arrowWrap{
+            margin: 30px;
+        }
+        .arrowWrap img{
+            transition: transform 2s cubic-bezier(0.240, -0.580, 0.670, 1.615);/*https://matthewlein.com/tools/ceaser*/
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="resetBtn">리셋</button>
+    <button type="button" class="startBtn">회전</button>
+    <h1>0deg</h1>
+    <div class="arrowWrap">
+        <img src="./image/up-arrow.svg" alt="arrow" class="arrow">
+    </div>
+    <script src="./js/회전.js"></script>
+</body>
+</html>
