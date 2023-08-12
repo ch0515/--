@@ -19,7 +19,7 @@ window.onload = function(){
 
 
     //페이지 변경
-    function pageChangeFunc(){
+    function pageChangeFunc(){ 
 
       for(var i=0; i<totalNum; i++){
         image[i].classList.remove("active");
