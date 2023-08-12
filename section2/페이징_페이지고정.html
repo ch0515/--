@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 고정</title>
+    <script src="./js/페이징_페이지고정.js"></script>
+    <style>
+        body {
+        overflow-x: hidden;
+        background-color: #000;
+      }
+
+      section {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        border-top: 1px dashed #333;
+        z-index: 100;
+      }
+
+      .innerWrap {
+        padding: 120px;
+        width: 340px;
+        margin-top:50px;
+        z-index: 50;
+      }
+
+      /* 우측 이미지 영역 */
+      .imageWrap {
+        position: fixed;
+        right: -20%;
+        top: 10%;
+        width:100%;
+      }
+
+      .image {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transition : all 1s ease-in-out;
+      }
+
+      .image.active {
+        opacity: 1;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        margin-top : 40vh;
+        font-size: 60px;
+      }
+      h2 {
+        color: #243544;
+      }
+      p {
+        color : #fff;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h1>페이지 타이틀</h1>
+    </section>
+
+    <section>
+        <div class="innerWrap">
+            <h2>
+                page1
+            </h2>
+            <p>
+                온갖 얼마나 자신과 것이다. 고행을 불러 더운지라 품었기 이는 싸인 않는 황금시대를 때문이다. 
+                청춘은 우리의 열락의 보라. 인생에 이상은 얼마나 피가 보이는 불어 남는 같은 피다. 
+                이 그러므로 찬미를 할지니, 안고, 하는 아니한 피고, 것이다. 끓는 청춘은 인간은 인간에 사랑의 그러므로 군영과 수 굳세게 때문이다. 
+                피고 그들은 주는 어디 있으랴? 설레는 그와 열락의 새가 그들의 것이다.보라, 사막이다. 찾아 귀는 피가 구하기 그들은 꽃 우리 때문이다.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="innerWrap">
+            <h2>
+                page2
+            </h2>
+            <p>
+                관현악이며, 아니더면, 꽃이 그들은 보라. 속에서 얼마나 원대하고, 인생의 청춘에서만 창공에 아니한 것이 때문이다. 
+                불어 길지 그들은 것이 가치를 인류의 보라. 물방아 옷을 것은 칼이다. 이상은 가는 위하여 있다. 내려온 충분히 그림자는 가는 행복스럽고 것이다. 
+                인간의 피고, 갑 동산에는 이상이 투명하되 것은 보내는 밥을 그리하였는가? 쓸쓸한 때에, 무엇을 얼음이 기쁘며, 있는 아름답고 소담스러운 얼마나 약동하다. 
+                수 생명을 두기 새 커다란 그들의 주는 물방아 되는 것이다. 용감하고 생의 하는 스며들어 열매를 것은 뜨거운지라, 이상 피다. 곧 그러므로 많이 발휘하기 구할 인생의 것이다.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="innerWrap">
+            <h2>
+                page3
+            </h2>
+            <p>
+                피가 있는 영원히 인간은 끝에 봄날의 있으랴? 일월과 품으며, 풍부하게 아름답고 이상의 운다. 
+                굳세게 위하여 하는 풍부하게 천지는 칼이다. 우리는 사람은 뼈 능히 두손을 가치를 운다. 
+                속잎나고, 미인을 인간은 살았으며, 힘차게 속에 힘차게 우리의 뜨고, 것이다. 고동을 가지에 따뜻한 하였으며, 것이다. 
+                만천하의 무엇을 그들의 거선의 방지하는 얼음에 그들은 열매를 인생에 있으랴? 생의 불어 이것이야말로 우리는 살았으며, 얼마나 때문이다. 
+                뛰노는 스며들어 그들에게 창공에 안고, 가는 속잎나고, 그리하였는가? 따뜻한 장식하는 위하여서, 이상, 오직 투명하되 불러 원질이 들어 아름다우냐?
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="innerWrap">
+            <h2>
+                page4
+            </h2>
+            <p>
+                그들은 발휘하기 인간의 얼음에 약동하다. 있는 무엇을 유소년에게서 무엇을 힘있다. 
+                속에 두손을 위하여, 있는 가는 사는가 같으며, 힘있다. 품었기 이상 봄날의 곧 이상 실로 끓는 사람은 있는 철환하였는가? 
+                바이며, 가슴에 뜨고, 찾아다녀도, 얼마나 것이다. 피가 오직 곳으로 옷을 못하다 인간에 황금시대다. 
+                얼음이 거선의 할지라도 수 군영과 창공에 과실이 만물은 위하여서. 속에 되는 같이, 역사를 노년에게서 없는 것이다. 
+                 꽃이 대고, 예수는 때까지 생의 노래하며 가장 미인을 그들은 피다. 할지니, 새 튼튼하며, 꽃이 많이 새가 피는 트고, 힘있다.
+            </p>
+        </div>
+    </section>
+
+    <div class="imageWrap">
+        <img src="./image/sample0.png" class="image" alt="이미지 0번">
+        <img src="./image/sample1.png" class="image" alt="이미지 1번">
+        <img src="./image/sample2.png" class="image" alt="이미지 2번">
+        <img src="./image/sample3.png" class="image" alt="이미지 3번">
+        <img src="./image/sample4.png" class="image" alt="이미지 4번">
+      </div>
+</body>
+</html>
